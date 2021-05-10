@@ -1,0 +1,9 @@
+.navbar {
+    background-color: red
+}
+
+.navbar__list-item {
+    color: white;
+    text-decoration: none;
+    background-color: forestgreen;
+}

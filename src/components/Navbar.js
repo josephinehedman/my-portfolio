@@ -26,7 +26,7 @@ export default function Navbar() {
                     <Link to="/about">About</Link>
                 </li>
                 <li className="navbar__list-item">
-                    <Link to="/projects">Portfolio</Link>  
+                    <Link to="/portfolio">Portfolio</Link>  
                 </li>
             </ul>
         </nav>

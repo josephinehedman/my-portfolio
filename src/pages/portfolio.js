@@ -1,12 +1,10 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import { graphql } from 'gatsby'
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
 const Portfolio = ({ data }) => {
 const nodes = data.allContentfulProject.edges;
-console.log(nodes);
-
+console.log(nodes[0].node.body.body)
 
     return (
         <Layout>
@@ -15,7 +13,7 @@ console.log(nodes);
                     {nodes.map(node => {
                         return (
                             <li> 
-                                {documentToReactComponents(JSON.parse(node.description?.raw))}
+                                {node.node.body.body}
                             </li>
                         )
                     })}
@@ -33,16 +31,21 @@ console.log(nodes);
         graphql`
             query MyProjects {
                 allContentfulProject {
-                edges {
-                    node {
-                    slug
-                    title
-                    description {
-                        raw
+                    edges {
+                        node {
+                        slug
+                        title
+                        body {
+                            body
+                        }
+                        image {
+                            file {
+                            url
+                            }
+                        }
+                        }
                     }
                     }
-                }
-                }
             }
             `
 

@@ -1,10 +1,10 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import Img from "gatsby-image"
 import { graphql } from 'gatsby'
 
 const Portfolio = ({ data }) => {
 const nodes = data.allContentfulProject.edges;
-console.log(nodes[0].node.body.body)
 
     return (
         <Layout>
@@ -14,6 +14,7 @@ console.log(nodes[0].node.body.body)
                         return (
                             <li> 
                                 {node.node.body.body}
+                                <Img fluid={node.node.image.fluid} alt={node.node.image.fluid.title}></Img> 
                             </li>
                         )
                     })}
@@ -39,10 +40,8 @@ console.log(nodes[0].node.body.body)
                             body
                         }
                         image {
-                            file {
-                            url
+                            fluid { ...GatsbyContentfulFluid }
                             }
-                        }
                         }
                     }
                     }

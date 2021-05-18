@@ -1,0 +1,31 @@
+.hompage__heading {
+    font-family: 'Roboto Mono', monospace;
+}
+
+@media all and (min-width: 600px) {
+
+.hompage__container {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hompage__heading {
+    font-size: 3rem;
+}
+.homepage__right-box,
+.homepage__left-box
+ {
+    width: 45%;
+}
+
+.homepage__left-box {
+    text-align: center;
+}
+
+.img-profile {
+   max-width: 800px;
+
+}
+}

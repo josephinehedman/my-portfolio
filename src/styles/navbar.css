@@ -1,9 +1,27 @@
-.navbar {
-    background-color: red
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
 
-.navbar__list-item {
-    color: white;
-    text-decoration: none;
-    background-color: forestgreen;
+
+@media all and (min-width: 600px) {
+    .navbar {
+        height: 100px;
+        background-color: white;
+        font-family: 'Roboto Mono', monospace;
+    }
+    .navbar__list {
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        align-items: center;
+    }
+
+    .navbar__links {
+        color: black;
+        font-size: 1.5rem;
+    }
+
+    .active__link{
+        border-bottom: 0.5px solid black;
+    }
+
 }

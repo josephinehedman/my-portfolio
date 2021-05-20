@@ -1,8 +1,8 @@
-import { graphql } from "gatsby"
 import React from "react"
 import Layout from '../components/Layout'
-import Img from "gatsby-image"
 import '../styles/index.css'
+import linkedin from '../../public/linkedin.png'
+import github from '../../public/github.svg'
 
 export default function Home() {
   return (
@@ -14,8 +14,8 @@ export default function Home() {
           <div className="connect__container">
             <p> Connect with me: </p>
             <div>
-              <img href='https://www.iconsdb.com/icons/preview/black/linkedin-5-xxl.png' alt='linkedin logo'/>
-              <img href='' alt='github logo'/>
+              <img src={linkedin} alt='linkedin logo'/>
+              <img src={github} alt='github logo'/>
             </div>
           </div>
     </section>

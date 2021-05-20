@@ -13,16 +13,14 @@ const nodes = data.allContentfulProject.edges;
                     {nodes.map(node => {
                         return (
                             <li> 
+                                <div>
                                 {node.node.body.body}
-                                <Img fluid={node.node.image.fluid} alt={node.node.image.fluid.title}></Img> 
+                                {/* <Img fluid={node.node.image.fluid} alt={node.node.image.fluid.title}></Img>  */}
+                                </div>
                             </li>
                         )
                     })}
                 </ul>
-                <h2>
-                    Portfolio
-                </h2>
-                <h3>Projects and websites I've created</h3>
             </div>
         </Layout>
     )
@@ -39,12 +37,9 @@ const nodes = data.allContentfulProject.edges;
                         body {
                             body
                         }
-                        image {
-                            fluid { ...GatsbyContentfulFluid }
-                            }
-                        }
                     }
                     }
+                }
             }
             `
 

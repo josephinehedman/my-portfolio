@@ -1,31 +1,8 @@
-.hompage__heading {
-    font-family: 'Roboto Mono', monospace;
-}
-
-@media all and (min-width: 600px) {
-
-.hompage__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
 
 .hompage__heading {
-    font-size: 3rem;
-}
-.homepage__right-box,
-.homepage__left-box
- {
-    width: 50%;
-    height: 100%
-}
-
-.homepage__left-box {
+    margin-top: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15rem;
     text-align: center;
-}
-
-.img-profile {
-    object-fit: cover;
-    height: 100%
-}
 }

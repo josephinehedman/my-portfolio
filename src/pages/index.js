@@ -13,7 +13,10 @@ export default function Home() {
           </h2>
           <div className="connect__container">
             <p> Connect with me: </p>
-            <img href='https://www.iconsdb.com/icons/preview/black/linkedin-5-xxl.png' alt='linkedin logo'/>
+            <div>
+              <img href='https://www.iconsdb.com/icons/preview/black/linkedin-5-xxl.png' alt='linkedin logo'/>
+              <img href='' alt='github logo'/>
+            </div>
           </div>
     </section>
     </Layout>

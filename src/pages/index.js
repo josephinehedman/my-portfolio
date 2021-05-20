@@ -12,9 +12,12 @@ export default function Home({ data }) {
           <h2 className="hompage__heading">
             JOSEPHINE <br/>HEDMAN
           </h2>
+          <div className="connect__container">
+            <img href='https://www.iconsdb.com/icons/preview/black/linkedin-5-xxl.png' alt='linkedin logo'/>
+          </div>
         </article>
         <article className="homepage__right-box">
-          <Img fluid={data.allContentfulAsset.nodes[0].fluid} alt="Josephine Hedman" className="img-profile"></Img> 
+          {/* <Img fluid={data.allContentfulAsset.nodes[0].fluid} alt="Josephine Hedman" className="img-profile"></Img>  */}
         </article>
     </section>
     </Layout>

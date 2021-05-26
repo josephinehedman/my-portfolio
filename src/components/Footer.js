@@ -6,8 +6,8 @@ import github from '../../public/github.svg'
 const Footer = () => {
     return (
         <footer className="footer">
-            <h2 className="footer__heading"> Connect with me: </h2>
-            <div>
+            <h2 className="footer__heading"> Connect with me </h2>
+            <div className="footer__logos">
               <img src={linkedin} alt='linkedin logo' className='connect-logo'/>
               <img src={github} alt='github logo' className='connect-logo'/>
             </div>

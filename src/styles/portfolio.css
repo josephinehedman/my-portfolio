@@ -1,0 +1,23 @@
+@media all and (min-width: 600px) {
+    .portfolio__container {
+        max-width: 1500px;
+        margin: 0 auto 100px auto;
+    }
+
+    .portfolio__content {
+        margin: 0 4rem;
+        text-align: justify;
+    }
+
+    .portfolio__heading {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .portfolio__paragraph {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+}

@@ -1,14 +1,20 @@
+.connect-logo:hover {
+    opacity: 100%;
+}
+
 .connect-logo {
     width: 40px;
     height: 40px;
     margin: 0 0.4rem;
+    padding-top: 0.4rem;
+    opacity: 70%;
 }
 
 .footer {
     background-color: #f9ecde;
     width: 100%;
     position: fixed;
-    margin-top: 0.4rem;
+    margin-top: 1rem;
     padding-bottom: 0.4rem;
     bottom: 0;
     display: flex;

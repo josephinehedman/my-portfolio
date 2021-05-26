@@ -8,7 +8,7 @@ export default function Navbar() {
         <nav className="navbar">
             <ul className="navbar__list">
                 <div>
-                    <p className="name__box">JOSEPHINE <br/> HEDMAN</p>
+                    <p className="name__box"><b>JOSEPHINE <br/> HEDMAN</b></p>
                 </div>
                 <div className="navbar__link-container">
                     <li className="navbar__list-item">

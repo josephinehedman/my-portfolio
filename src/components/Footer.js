@@ -1,7 +1,7 @@
 import React from "react"
 import '../styles/footer.css'
-import linkedin from '../../public/linkedin.png'
-import github from '../../public/github.svg'
+import linkedin from '../images/linkedin.png'
+import github from '../images/github.svg'
 
 const Footer = () => {
     return (

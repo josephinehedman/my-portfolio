@@ -11,14 +11,20 @@ const nodes = data.allContentfulProject.edges;
             <section className="portfolio__container">
                 <article className="portfolio__content">
                     <h2 className="portfolio__heading">My Projects</h2>
-                <ul>
+                <ul className="portfolio__list">
                     {nodes.map(node => {
                         return (
                             <li> 
-                                <div>
-                                    <p className="portfolio__paragraph">
+                                <div className="project__container">
+                                    <h3>
+                                        {node.node.title}
+                                    </h3>
+                                    <p className="project__paragraph">
                                         {node.node.body.body}
                                     </p>
+                                    <div>
+                                        <a href="{node.node.deployed}" target="_blank"> Deployed </a>
+                                    </div>
                                 {/* <Img fluid={node.node.image.fluid} alt={node.node.image.fluid.title}></Img>  */}
                                 </div>
                             </li>
@@ -42,6 +48,8 @@ const nodes = data.allContentfulProject.edges;
                         body {
                             body
                         }
+                        deployed
+                        sourceCode
                     }
                     }
                 }

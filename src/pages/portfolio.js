@@ -12,7 +12,7 @@ const nodes = data.allContentfulProject.edges;
                 <article className="portfolio__content">
                     <h2 className="portfolio__heading">My Projects</h2>
                 <ul className="portfolio__list">
-                    {nodes.map(node => {
+                    {nodes.reverse().map(node => {
                         return (
                             <li> 
                                 <div className="project__container">

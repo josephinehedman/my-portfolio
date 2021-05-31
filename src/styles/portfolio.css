@@ -20,12 +20,27 @@
     }
 
     .project__container {
-
+        margin-bottom: 2rem;
     }
 
     .project__paragraph {
         font-size: 1.5rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .link__sourcecode,
+    .link__deployed {
+        text-decoration: none;
+        color: black;
+        border: 3px solid black;
+        border-radius: 1rem;
+        padding: 5px;
+        margin-right: 10px;
+        background: #ffffff;
+    }
+    .link__sourcecode:hover,
+    .link__deployed:hover {
+        text-decoration: underline;
     }
 
 }

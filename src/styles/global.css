@@ -7,7 +7,8 @@
 }
 
 body {
-    background-image: linear-gradient(45deg, #f0e7ee 44.12%, #e8d6de 44.12%, #e8d6de 50%, #f0e7ee 50%, #f0e7ee 94.12%, #e8d6de 94.12%, #e8d6de 100%);
-    background-size: 51.00px 51.00px;
+    /* background-image: linear-gradient(45deg, #f0e7ee 44.12%, #e8d6de 44.12%, #e8d6de 50%, #f0e7ee 50%, #f0e7ee 94.12%, #e8d6de 94.12%, #e8d6de 100%);
+    background-size: 51.00px 51.00px; */
+    background: rgb(240, 235, 227);
     font-family: 'Poppins', sans-serif;
 }

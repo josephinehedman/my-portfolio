@@ -22,8 +22,9 @@ const nodes = data.allContentfulProject.edges;
                                     <p className="project__paragraph">
                                         {node.node.body.body}
                                     </p>
-                                    <div>
-                                        <a href="{node.node.deployed}" target="_blank"> Deployed </a>
+                                    <div className="project__links">
+                                        <a href={node.node.deployed} target="_blank" className="link__deployed"> Deployed </a>
+                                        <a href={node.node.sourceCode} target="_blank" className="link__sourcecode">Source Code </a>
                                     </div>
                                 {/* <Img fluid={node.node.image.fluid} alt={node.node.image.fluid.title}></Img>  */}
                                 </div>

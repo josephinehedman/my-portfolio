@@ -5,6 +5,7 @@ import { graphql } from 'gatsby'
 
 const Portfolio = ({ data }) => {
 const nodes = data.allContentfulProject.edges;
+const reversedArray = nodes.reverse();
 
     return (
         <Layout>
@@ -12,7 +13,7 @@ const nodes = data.allContentfulProject.edges;
                 <article className="portfolio__content">
                     <h2 className="portfolio__heading">My Projects</h2>
                 <ul className="portfolio__list">
-                    {nodes.reverse().map(node => {
+                    {reversedArray.map(node => {
                         return (
                             <li> 
                                 <div className="project__container">

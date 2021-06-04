@@ -1,9 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
 
+.navbar {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.navbar__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar__link-container {
+    list-style-type: none;
+}
+
 @media all and (min-width: 600px) {
     .navbar {
         height: 120px;
-        font-family: 'Roboto Mono', monospace;
         margin-bottom: 2rem;
     }
     .navbar__list {
@@ -23,7 +35,6 @@
 
     .navbar__link-container {
         width: 50%;
-        list-style-type: none;
         display: flex;
         justify-content: space-evenly;
     }

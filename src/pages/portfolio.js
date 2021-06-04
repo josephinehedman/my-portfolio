@@ -5,7 +5,7 @@ import { graphql } from 'gatsby'
 
 const Portfolio = ({ data }) => {
 const nodes = data.allContentfulProject.edges;
-const reversedArray = nodes.reverse();
+const orderedList = nodes.sort((a, b) => a-b);
 
     return (
         <Layout>
@@ -13,7 +13,7 @@ const reversedArray = nodes.reverse();
                 <article className="portfolio__content">
                     <h2 className="portfolio__heading">My Projects</h2>
                 <ul className="portfolio__list">
-                    {reversedArray.map(node => {
+                    {orderedList.map(node => {
                         return (
                             <li> 
                                 <div className="project__container">
@@ -52,6 +52,7 @@ const reversedArray = nodes.reverse();
                         }
                         deployed
                         sourceCode
+                        order
                     }
                     }
                 }

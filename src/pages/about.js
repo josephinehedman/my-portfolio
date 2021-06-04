@@ -11,7 +11,7 @@ export default function About() {
                 <article>
                     <p className="about__paragraph">
                         I have a MSc in Industrial Management and Engineering (graduated in 2018). 
-                        After working for two years as a trainee and later on as a market analyst, I felt it was time to pursue an old dream of mine.
+                        After working as a trainee and later on as a market analyst, I felt it was time to pursue an old dream of mine.
                         Some three intense months of &lt;/salt&gt; bootcamp later, I finally got to work with JavaScript as a FullStack Instructor at the same bootcamp I recently completed.
                     </p>
                 </article>

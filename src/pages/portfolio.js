@@ -5,7 +5,7 @@ import { graphql } from 'gatsby'
 
 const Portfolio = ({ data }) => {
 const nodes = data.allContentfulProject.edges;
-const orderedList = nodes.sort((a, b) => a-b);
+const orderedList = nodes.sort((a, b) => a.node.order-b.node.order);
 
     return (
         <Layout>

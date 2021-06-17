@@ -19,11 +19,6 @@ export default function Navbar() {
                 <div>
                     <p className="name__box"><b>JOSEPHINE <br/> HEDMAN</b></p>
                 </div>
-                <div className="hambuger__container">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
                 <div className="navbar__link-container">
                     <li className="navbar__list-item">
                         <Link to="/" className="navbar__links" activeClassName="active__link">Home</Link>

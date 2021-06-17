@@ -2,6 +2,33 @@
     list-style: none;
 }
 
+.portfolio__content {
+    margin: 0 1rem;
+}
+
+.portfolio__container {
+    margin-bottom: 120px ;
+}
+ .project__container {
+    margin-bottom: 1rem;
+}
+
+.link__sourcecode,
+.link__deployed {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding: 2px;
+    margin-right: 10px;
+    background: #ffffff;
+}
+.link__sourcecode:hover,
+.link__deployed:hover {
+    text-decoration: underline;
+}
+
 @media all and (min-width: 600px) {
     .portfolio__container {
         max-width: 1500px;

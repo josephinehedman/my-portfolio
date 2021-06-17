@@ -1,3 +1,11 @@
+.about__container {
+    margin-bottom: 120px ;
+}
+
+.about__content {
+    margin: 0 1rem;
+}
+
 @media all and (min-width: 600px) {
     .about__container {
         max-width: 1500px;

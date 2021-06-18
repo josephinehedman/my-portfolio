@@ -56,7 +56,7 @@
 /* @media all and (min-width: 600px) { */
     .navbar {
         height: 120px;
-        margin-bottom: 2rem;
+        margin-bottom: 10px;
     }
     .navbar__list {
         height: 100%;

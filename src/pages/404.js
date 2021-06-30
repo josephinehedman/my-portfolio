@@ -4,10 +4,10 @@ import Layout from '../components/Layout'
 export default function NotFound() {
     return (
         <Layout>
-            <div>
+            <section>
                 <h2>404</h2>
                 <p>Sorry, that page doesn</p>
-            </div>
+            </section>
         </Layout>
     )
 }

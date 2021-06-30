@@ -4,15 +4,6 @@ import '../styles/navbar.css'
 
 export default function Navbar() {
 
-    const hamburgerMenu = document.querySelector('.hambuger__container');
-    const navbarLinks = document.querySelector('.navbar__link-container');
-    if (hamburgerMenu) {
-        hamburgerMenu.addEventListener('click', () => {
-            console.log('click');
-            navbarLinks.classList.toggle('hide');            
-        });
-    }
-
     return (
         <nav className="navbar">
             <ul className="navbar__list">

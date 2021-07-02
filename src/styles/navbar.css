@@ -13,13 +13,22 @@
     align-items: center;
 }
 
+.hide {
+    display: none;
+    visibility: hidden;
+ }
+
+
 .navbar__link-container {
+    height: 100%;
     list-style-type: none;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     position: absolute;
-    right: 8px;
+    right: 0;
+    padding: 0 10px;
+    background: red;
 }
 
 .name__box {

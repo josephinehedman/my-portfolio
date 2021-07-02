@@ -1,8 +1,13 @@
 import { Link } from 'gatsby'
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/navbar.css'
 
 export default function Navbar() {
+    const [displayLinks, setDisplayLinks] = useState('hide');
+
+    const toggleMenu = (e) => {
+        console.log('hej')
+    }
 
     return (
         <nav className="navbar">
@@ -10,7 +15,10 @@ export default function Navbar() {
                 <div>
                     <p className="name__box"><b>JOSEPHINE <br/> HEDMAN</b></p>
                 </div>
-                <div className="navbar__link-container">
+                <button onClick={toggleMenu}>
+                    hej
+                </button>
+                <div className={`navbar__link-container ${displayLinks}`}>
                     <li className="navbar__list-item">
                         <Link to="/" className="navbar__links" activeClassName="active__link">Home</Link>
                     </li>

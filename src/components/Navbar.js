@@ -6,7 +6,13 @@ export default function Navbar() {
     const [displayLinks, setDisplayLinks] = useState('hide');
 
     const toggleMenu = (e) => {
-        console.log('hej')
+        let updateDisplayLinks;
+        if (displayLinks === 'hide') {
+            updateDisplayLinks = '';
+        } else {
+            updateDisplayLinks = 'hide';
+        }
+        setDisplayLinks(updateDisplayLinks);
     }
 
     return (

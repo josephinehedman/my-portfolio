@@ -3,17 +3,22 @@ import React, { useState } from 'react'
 import '../styles/navbar.css'
 
 export default function Navbar() {
-    // const [displayLinks, setDisplayLinks] = useState('hide');
+    const [displayLinks, setDisplayLinks] = useState('hide');
+    const [toggleBtn, setToggleBtn] = useState('');
 
-    // const toggleMenu = (e) => {
-    //     let updateDisplayLinks;
-    //     if (displayLinks === 'hide') {
-    //         updateDisplayLinks = '';
-    //     } else {
-    //         updateDisplayLinks = 'hide';
-    //     }
-    //     setDisplayLinks(updateDisplayLinks);
-    // }
+    const toggleMenu = (e) => {
+        let updateDisplayLinks;
+        let updateToggleBtn;
+        if (displayLinks === 'hide') {
+            updateDisplayLinks = '';
+            updateToggleBtn = 'open'
+        } else {
+            updateDisplayLinks = 'hide';
+            updateToggleBtn = ''
+        }
+        setDisplayLinks(updateDisplayLinks);
+        setToggleBtn(updateToggleBtn);
+    }
 
     return (
         <nav className="navbar">
@@ -21,10 +26,15 @@ export default function Navbar() {
                 <div>
                     <p className="name__box"><b>JOSEPHINE <br/> HEDMAN</b></p>
                 </div>
-                {/* <button onClick={toggleMenu}>
-                    hej
-                </button> */}
-                <div className={`navbar__link-container`}>
+                <button onClick={toggleMenu} className='toggle-btn'>
+                    <div className={`toggle-div ${toggleBtn}`}>
+                        <span>
+                        </span>  
+                        <span>
+                        </span>
+                    </div>
+                </button>
+                <div className={`navbar__link-container ${displayLinks}`}>
                     <li className="navbar__list-item">
                         <Link to="/" className="navbar__links" activeClassName="active__link">Home</Link>
                     </li>

@@ -32,6 +32,8 @@ export default function Navbar() {
                         </span>  
                         <span>
                         </span>
+                        <span>
+                        </span>
                     </div>
                 </button>
                 <div className={`navbar__link-container ${displayLinks}`}>

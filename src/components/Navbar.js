@@ -19,7 +19,7 @@ export default function Navbar() {
         setDisplayLinks(updateDisplayLinks);
         setToggleBtn(updateToggleBtn);
     }
- 
+
     return (
         <nav className="navbar">
             <ul className="navbar__list">

@@ -6,7 +6,7 @@ export default function NotFound() {
         <Layout>
             <section>
                 <h2>404</h2>
-                <p>Sorry, that page doesn</p>
+                <p>Sorry, that page doesn't exist</p>
             </section>
         </Layout>
     )

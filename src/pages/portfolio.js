@@ -27,7 +27,6 @@ const orderedList = nodes.sort((a, b) => a.node.order-b.node.order);
                                         <a href={node.node.deployed} target="_blank" className="link__deployed"> Deployed </a>
                                         <a href={node.node.sourceCode} target="_blank" className="link__sourcecode">Source Code </a>
                                     </div>
-                                {/* <Img fluid={node.node.image.fluid} alt={node.node.image.fluid.title}></Img>  */}
                                 </div>
                             </li>
                         )

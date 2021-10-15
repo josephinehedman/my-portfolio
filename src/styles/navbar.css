@@ -1,112 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap");
 
 .navbar {
-    font-family: 'Roboto Mono', monospace;
-    height: 120px;
-        margin-bottom: 10px;
+  font-family: "Roboto Mono", monospace;
+  height: 120px;
+  margin-bottom: 10px;
 }
 
 .navbar__list {
-    position: relative;
-    display: flex;
-    height: 100%;
-    align-items: center;
+  position: relative;
+  display: flex;
+  height: 100%;
+  align-items: center;
 }
 
 .toggle-div {
-    position: fixed;
-    z-index: 100;
-    right: 15px;
-    top: 15px;
-    width: 30px;
-    height: 21px;
+  position: fixed;
+  z-index: 100;
+  right: 15px;
+  top: 15px;
+  width: 30px;
+  height: 21px;
 }
 
-.toggle-div span{
-    display: block;
-    position: absolute;
-    height: 3px;
-    background: #000000;
-    width: 100%;
-    transition: 0.4s;
+.toggle-div span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  background: #000000;
+  width: 100%;
+  transition: 0.4s;
 }
 
 .toggle-div span:first-child {
-    top: 0;
+  top: 0;
 }
 
 .toggle-div span:nth-child(2) {
-    top: 9px;
+  top: 9px;
 }
 
 .toggle-div span:nth-child(3) {
-    bottom: 0;
+  bottom: 0;
 }
 
 .open span:first-child {
-    -webkit-transform: rotate(-45deg) translate(-5px, 6px);
-    transform: rotate(-45deg) translate(-5px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-5px, 6px);
 }
 
 .open span:nth-child(2) {
-    display: none;
+  display: none;
 }
 
 .open span:nth-child(3) {
-    -webkit-transform: rotate(45deg) translate(-6px, -8px);
-    transform: rotate(45deg) translate(-6px, -8px);
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
 }
 .hide {
-    display: none;
-    visibility: hidden;
- }
+  display: none;
+  visibility: hidden;
+}
 
 .navbar__link-container {
-    height: 100%;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    position: absolute;
-    right: 0;
-    padding: 0 10px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: fixed;
+  right: 5px;
+  top: 5px;
+  padding: 20px 10px;
+  background: white;
 }
 
 .name__box {
-        border: black 4px solid;
-        font-size: 1rem;
-        padding: 0.5rem;
-        font-family: 'Poppins', sans-serif;
-        background-color: #ffffff;
-        margin-left: 10px;
-    }
+  border: black 4px solid;
+  font-size: 1rem;
+  padding: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  margin-left: 10px;
+}
 
-    .navbar__links {
-        color: black;
-        font-size: 1.4rem;
-    }
+.navbar__links {
+  color: black;
+  font-size: 1.4rem;
+}
 
-    .active__link{
-        border-bottom: 0.5px solid black;
-    }
+.active__link {
+  border-bottom: 0.5px solid black;
+}
 
+@media all and (min-width: 600px) {
+  .navbar__links {
+    justify-content: space-between;
+  }
+  .navbar__link-container {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    top: 20px;
+  }
+  .toggle-div {
+    display: none;
+  }
 
-    @media all and (min-width: 600px) {
-        .navbar__links {
-            justify-content: space-between;
-        }
-        .navbar__link-container {
-            display: flex;
-            flex-direction: row;
-            width: 50%;
-            top: 20px;
-        }
-        .toggle-div {
-            display: none;
-        }
-
-        .hide {
-            visibility: visible;
-        }
-
-    }
+  .hide {
+    visibility: visible;
+  }
+}

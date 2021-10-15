@@ -12,6 +12,7 @@ const AddTodo = ({ addTodo }) => {
             alert('Please add a title and description!');
             return;
         }
+        
         addTodo(title, desc);
         setTitle('');
         setDesc('');

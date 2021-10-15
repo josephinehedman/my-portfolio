@@ -100,6 +100,7 @@
     flex-direction: row;
     width: 50%;
     top: 20px;
+    background: rgb(240, 235, 227);
   }
   .toggle-div {
     display: none;

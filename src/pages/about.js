@@ -21,7 +21,7 @@ export default function About() {
                             Frontend
                         </h3>
                         <p className="about__paragraph">
-                            Javascript, HTML, CSS, React, Gatsby, Redux
+                            HTML, CSS, React, Gatsby, Redux
                         </p>
                     </div>
                     <div>
@@ -34,10 +34,10 @@ export default function About() {
                     </div>
                     <div>
                         <h3>
-                            Tools
+                            Tools & Languages
                         </h3>
                         <p className="about__paragraph">
-                            Netlify, Contentful, Heroku, Mocha/Jest, TDD, Figma
+                            Javascript, TypeScript, Netlify, Contentful, Heroku, Mocha/Jest, TDD, Figma
                         </p>
                     </div>
                 </article>
